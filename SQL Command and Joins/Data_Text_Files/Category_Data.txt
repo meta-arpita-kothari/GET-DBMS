@@ -1,0 +1,13 @@
+Electronics	0
+Fashion	0
+Home Appliances	0
+Fitness	0
+Audio	1
+Shirts	2
+Jeans	2
+Wrist watch	2
+Induction cooktop	3
+Toaster	3
+Whey Protein	4
+Trade mill	4
+Mobile	1

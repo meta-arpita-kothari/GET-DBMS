@@ -1,0 +1,11 @@
+Vikas Soni	Shop	vikas.soni@metacube.com	1999-11-28	8290577545
+Charul Singhvi	Shop	charul.singhvi@metacube.com	1999-2-21	8454587867
+Shreya Bapna	Shop	shreya.bapna@metacube.com	1999-8-11	7754597574
+Chinmay Jain	Shop	chinmay.jain@metacube.com	1999-6-12	8786797574
+Lovely Jain	Shop	lovely.jain@metacube.com	1998-5-27	9846577545
+Hitesh Pareek	Shop	hitesh.pareek@metacube.com	1999-6-26	9568787867
+Archita Maurya	Shop	archita.maurya@metacube.com	1999-5-21	8676797574
+Utkarsh Sharma	Shop	utkarsh.sharma@metacube.com	1999-8-19	8575677545
+Avinash Kumar	Shop	avinash.kumar@metacube.com	1999-8-16	9897897574
+Karti Jain	Shop	krati.jain@metacube.com	1999-4-25	9757487867
+Arpita Kothari	Admin	arpita.kothari@metacube.com	1999-6-23	9757487345
