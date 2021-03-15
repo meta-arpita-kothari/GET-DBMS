@@ -1,0 +1,16 @@
+1	B-310 R.K. Colony	Bhilwara	311001	Rajasthan	India
+1	A-280 R.K. Colony	Bhilwara	311001	Rajasthan	India
+2	C-110 R.K. Colony	Bhilwara	311001	Rajasthan	India
+2	A-100 Ram Colony	Lucknow	250815	UttarPradesh	India
+3	B-50Ram Colony	Lucknow	250815	UttarPradesh	India
+3 	Vaishali Nagar	Jaipur	182285	Rajasthan	India
+4	Gopalpura Byepass	Jaipur	182285	Rajasthan	India
+4	Govind Nagar Sector5	Ajmer	318181	Rajasthan	India
+5	Daulat Nagar	Delhi	145681	Delhi	India
+6	Ram Nagar	Delhi	145681	Delhi	India
+7	Vaibhav Nagar	Shadowl	568789	Madhya Pradesh	India
+8	Ram Vihar	Shadowl	568789	Madhya Pradesh	India
+9	Sector-5 Rahul Vihar	Udaipur	313001	Rajasthan	India
+9	Sector-6 Raghav Vihar	Udaipur	313001	Rajasthan	India
+10	Gyan Vihar	Jabalpur	458127	Madhya Pradesh	India
+10	RamGanj Mandi	Kota	324009	Rajasthan	India
