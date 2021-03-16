@@ -60,6 +60,11 @@ WHERE Product_Id NOT IN(
     
     
 #Query for given a category search keyword, display all the Products present in this category/categories. 
+#example "o"
+SELECT p.Product_Id, p.Product_Title , c.Category_Name
+FROM Product p , Product_Category pc, Category c
+WHERE p.Product_Id = pc.Product_Id AND pc.Category_Id = c.Category_Id
+    AND c.Category_Name like "%O%";
 
     
 # Query to display top 10 Items which were cancelled most.
