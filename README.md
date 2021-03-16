@@ -4,30 +4,48 @@
 ### Session 2
 
 ### Assignment 1:
-Write SQL scripts for the following:
-Create all tables of eCommerce Application: StoreFront covered in Session 1 Assignments. (Write all CREATE commands in a SQL file and run that SQL File).
-Write a command to display all the table names present in StoreFront.
-Write a command to remove Product table of the StoreFront database.
-Create the Product table again.
+With respect to StoreFront application identify, apply and list the constraints you would apply on the columns for the tables created.
 
 ### Assignment 2:
 Write SQL scripts for the following:
-Insert sample data in StoreFront tables by using SQL files.
-Display Id, Title, Category Title, Price of the products which are Active and recently added products should be at top.
-Display the list of products which don't have any images.
-Display all Id, Title and Parent Category Title for all the Categories listed, sorted by Parent Category Title and then Category Title. (If Category is top category then Parent Category Title column should display “Top Category” as value.)
-Display Id, Title, Parent Category Title of all the leaf Categories (categories which are not parent of any other category)
-Display Product Title, Price & Description which falls into particular category Title (i.e. “Mobile”)
-Display the list of Products whose Quantity on hand (Inventory) is under 50.
+
+Display the list of products (Id, Title, Count of Categories) which fall in more than one Categories.
+
+Display Count of products as per below price range:
+
+Range in Rs.   Count
+_______________________
+0 - 100      |
+-----------------------
+101 - 500    |
+-----------------------
+Above 500    |
+-----------------------
+
+Display the Categories along with number of products under each category.
+
 
  
 ### Assignment 3:
 Write SQL scripts for the following:
-Display Recent 50 Orders placed (Id, Order Date, Order Total).
-Display 10 most expensive Orders.
-Display all the Orders which are placed more than 10 days old and one or more items from those orders are still not shipped.
-Display list of shoppers which haven't ordered anything since last month.
-Display list of shopper along with orders placed by them in last 15 days. 
-Display list of order items which are in “shipped” state for particular Order Id (i.e.: 1020))
-Display list of order items along with order placed date which fall between Rs 20 to Rs 50 price.
+Display Shopper’s information along with number of orders he/she placed during last 30 days.
+Display the top 10 Shoppers who generated maximum number of revenue in last 30 days.
+Display top 20 Products which are ordered most in last 60 days along with numbers.
+Display Monthly sales revenue of the StoreFront for last 6 months. It should display each month’s sale.
+Mark the products as Inactive which are not ordered in last 90 days.
+Given a category search keyword, display all the Products present in this category/categories. 
+Display top 10 Items which were cancelled most.
+
+
+### Assignment 4:
+Consider a form where providing a Zip Code populates associated City and
+State. 
+Create appropriate tables and relationships for the same and write a SQL
+         query for that returns a Resultset containing Zip Code, City Names and
+         States ordered by State Name and City Name.
+
+### Assignment 5:
+Create a view displaying the order information (Id, Title, Price, Shopper’s name, Email, Orderdate, Status) with latest ordered items should be displayed first for last 60 days.
+Use the above view to display the Products(Items) which are in ‘shipped’ state.
+Use the above view to display the top 5 most selling products.
 
