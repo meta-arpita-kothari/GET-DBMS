@@ -92,3 +92,33 @@ CREATE TABLE Order_Address (
     FOREIGN KEY(Order_Id) REFERENCES Orders(Order_Id),
     FOREIGN KEY(User_Id) REFERENCES User(User_Id)
 );
+
+
+DROP TABLE Image;
+DROP TABLE Product_Category;
+DROP TABLE Product;
+
+CREATE TABLE Product(
+    Product_Id INT NOT NULL AUTO_INCREMENT,
+    Product_Title VARCHAR(30),
+    Product_Description VARCHAR(200),
+    Unit_Price INT,
+    Stock_Quantity INT,
+    PRIMARY KEY(Product_Id)
+);
+
+CREATE TABLE Product_Category (
+    Id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    Product_Id INT NOT NULL,
+    Category_Id INT NOT NULL,
+    FOREIGN KEY(Product_Id) REFERENCES Product(Product_Id),
+    FOREIGN KEY(Category_Id) REFERENCES Category(Category_Id)
+);
+
+CREATE TABLE Image(
+    Image_Id INT NOT NULL,
+    Product_Id INT,
+    Image_URL VARCHAR(30),
+    PRIMARY KEY(Image_Id),
+    FOREIGN KEY(Product_Id) REFERENCES Product(Product_Id)
+); 
