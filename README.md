@@ -1,7 +1,7 @@
 # GET-DBMS
 
 ### Database Management System - Assignments
-### Session 2
+### Session 3
 
 ### Assignment 1:
 With respect to StoreFront application identify, apply and list the constraints you would apply on the columns for the tables created.
@@ -16,9 +16,7 @@ Display Count of products as per below price range:
 Range in Rs.   Count
 
 0 - 100      |
------------------------
 101 - 500    |
------------------------
 Above 500    |
 
 Display the Categories along with number of products under each category.
