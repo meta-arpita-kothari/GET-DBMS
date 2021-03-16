@@ -122,3 +122,7 @@ CREATE TABLE Image(
     PRIMARY KEY(Image_Id),
     FOREIGN KEY(Product_Id) REFERENCES Product(Product_Id)
 ); 
+
+
+#Query to list all tables in database Storefront
+SELECT TABLE_NAME FROM INFORMATION_SCHEMA.tables WHERE TABLE_SCHEMA="StoreFront" ;
