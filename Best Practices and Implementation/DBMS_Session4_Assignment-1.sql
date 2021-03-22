@@ -29,8 +29,7 @@ CREATE FUNCTION getMonthOfMaximumOrders(year INT)
 
 BEGIN
     DECLARE monthOfMaximumOrders VARCHAR(10);
-    SET monthOfMaximumOrders =  ( SELECT IF(NULL,"No Orders",MONTHNAME(Order_Date)) FROM Orders WHERE Year(Order_Date)=year 
-                GROUP BY MONTHNAME(Order_date) DESC LIMIT 1);
+    SET monthOfMaximumOrders =  ( SELECT MONTHNAME(Order_Date) FROM Orders WHERE Year(Order_Date)=year GROUP BY MONTHNAME(Order_date) Order BY COUNT(Order_Id) DESC LIMIT 1);
                 
     RETURN monthOfMaximumOrders;
 END $$
