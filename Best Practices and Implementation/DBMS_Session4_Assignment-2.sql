@@ -5,7 +5,7 @@ DELIMITER $$
 CREATE PROCEDURE getAverageSale (IN month INT,IN year INT)
 
 BEGIN
-    SELECT oi.Product_Id,p.Product_Title,SUM(oi.Quantity) AS AVERAGE_No_of_Sales
+    SELECT oi.Product_Id,p.Product_Title,AVG(oi.Quantity) AS AVERAGE_No_of_Sales
     FROM Order_Items oi
     LEFT JOIN Product p
     ON oi.Product_Id = p.Product_Id
