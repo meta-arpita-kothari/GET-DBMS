@@ -1,12 +1,12 @@
 USE StoreFront;
 
 # SQL Query to retreive list of products which falls in more than one category
-SELECT p.Product_Id, p.Product_Title , COUNT(p.Product_Id) as Number_Of_Category
+SELECT p.Product_Id, p.Product_Title , COUNT(pc.Category_Id) as Number_Of_Category
 FROM Product p
 Right JOIN Product_Category pc
 ON p.Product_Id = pc.Product_Id
 GROUP BY p.Product_Id
-HAVING COUNT(p.Product_Id) > 1;
+HAVING COUNT(pc.Category_Id) > 1;
 
 
 # SQL Query to display Count of products as per range.
