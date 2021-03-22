@@ -42,7 +42,6 @@ SELECT MONTHNAME(o.Order_Date) As Month ,SUM(o.Order_Amount) as Total_Sales , o.
 FROM Orders o
 LEFT JOIN Order_Items oi
 ON o.Order_Id = oi.Order_id
-WHERE oi.status like "%delivered%"
 GROUP BY MONTHNAME(o.Order_Date)
 HAVING o.Order_Date >= DATE_ADD(NOW(), INTERVAL -3 MONTH)
 ORDER BY MONTH(o.Order_Date) DESC;
@@ -54,7 +53,7 @@ UPDATE Product
 SET Status = "INACTIVE"
 WHERE Product_Id NOT IN(
     SELECT oi.Product_Id FROM Orders o
-    INNER JOIN Oirder_Items oi
+    INNER JOIN Order_Items oi
     ON o.Order_Id = oi.Order_Id
     WHERE DATEDIFF(NOW(),o.Order_Date) BETWEEN 1 AND 90);
     
